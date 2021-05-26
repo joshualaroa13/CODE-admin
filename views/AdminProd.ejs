@@ -1,0 +1,116 @@
+<%- include('head'); %>
+<div class="admin-prod">
+    <div class="sidebar">
+        <center><img  src="/logo.png"></center>
+        <br>    
+        <center><a href="/admin" >Overview</a><br>
+        <a href="/admin/products">Products</a><br>
+        <a href="/admin/orders" >Orders</a><br><br><br>
+        <a href="/admin/login" >Logout</a><br></center>
+    </div>
+    <div class="content">
+    
+          <br><br>
+          <h2>Shirts</h2>
+          
+          <table>
+            <tr>
+              <th>Shirt Name</th>
+              <th></th>
+              <th></th>
+    
+            </tr>
+            <tr>
+              <td>Chrome Tee</td>
+              <td><button>Edit</button></td>
+              <td><button>Delete</button></td>
+
+            </tr>
+            <tr>
+              <td>Smiley Tee</td>
+              <td><button>Edit</button></td>
+              <td><button>Delete</button></td>
+ 
+            </tr>
+          </table>
+    </div>
+ 
+</div>
+
+<style>
+.sidebar img{
+margin-top: 20px;
+width: 70%;
+}
+.sidebar {
+width: 15%;
+background: black;
+height: 600px;
+float: left;
+}
+
+.content {
+margin-left: 15%;
+height: 600px;
+padding: 20px;
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+float: left;
+width: 25%;
+padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+.column {
+width: 100%;
+display: block;
+margin-bottom: 20px;
+}
+}
+
+/* Style the counter cards */
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+padding: 26px;
+text-align: center;
+background-color: #f1f1f1;
+}
+
+table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+          }
+          
+          td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+          }
+          
+          tr:nth-child(even) {
+            background-color: #dddddd;
+          }
+
+</style>
