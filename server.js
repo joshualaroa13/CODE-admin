@@ -27,6 +27,13 @@ app.get('/admin',(req,res)=>{
 app.get('/admin/products',(req,res)=>{
     res.render('AdminProd.ejs');
 });
+app.get('/admin/orders',(req,res)=>{
+    res.render('Orders.ejs');
+});
+app.get('/admin/images',(req,res)=>{
+    res.render('Images.ejs');
+});
+
 
 
 app.listen(3000);
